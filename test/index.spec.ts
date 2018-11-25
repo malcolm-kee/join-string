@@ -15,6 +15,11 @@ describe('joinString', () => {
     const joinFn = joinString(', ');
     expect(joinFn('x', false, true, 'y', undefined, null, 'z', '')).toBe('x, y, z');
   });
+
+  test('array will be flatten', () => {
+    const joinFn = joinString(', ');
+    expect(joinFn('x', false, undefined, 'y', [false, null, 'z', ''])).toBe('x, y, z');
+  });
 });
 
 describe('joinClassName', () => {
