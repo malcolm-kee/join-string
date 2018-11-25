@@ -2,10 +2,23 @@ import { isFilledString, isArray, isNumber } from 'typesafe-is';
 
 export const joinString = (delimiter: string) =>
   function joinFn(...items: Array<any>): string {
-    return items
-      .filter(item => isFilledString(item) || isNumber(item) || isArray(item))
-      .map(item => (isArray(item) ? joinFn(...item) : item))
-      .join(delimiter);
+    const results: Array<string | number> = [];
+
+    for (let index = 0; index < items.length; index++) {
+      const item = items[index];
+
+      if (isNumber(item) || isFilledString(item)) {
+        results.push(item);
+        continue;
+      }
+
+      if (isArray(item)) {
+        results.push(joinFn(...item));
+        continue;
+      }
+    }
+
+    return results.join(delimiter);
   };
 
 export default joinString;
