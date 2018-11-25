@@ -8,4 +8,6 @@ export const joinString = (delimiter: string) =>
       .join(delimiter);
   };
 
+export default joinString;
+
 export const joinClassName = joinString(' ');
