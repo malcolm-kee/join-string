@@ -49,11 +49,11 @@ The filtering rule of the joining functions are:
 
 `joinString` is available with `import joinString from 'join-string'` or `import { joinString } from 'join-string'`, based on your preference.
 
-### `joinClass: (...classNames: any[]) => string`
+### `joinClassName: (...classNames: any[]) => string`
 
-`joinClass` is an utility to construct className. It join all its parameter with a space.
+`joinClassName` is an utility to construct className. It join all its parameter with a space.
 
-Under the hood, `joinClass` is just `joinString(' ')`.
+Under the hood, `joinClassName` is just `joinString(' ')`.
 
 [npm]: https://www.npmjs.com/
 [node]: https://nodejs.org

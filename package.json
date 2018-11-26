@@ -1,6 +1,6 @@
 {
   "name": "join-string",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A utility for joining strings",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -17,6 +17,13 @@
   ],
   "author": "Malcolm Kee <malcolm.keeweesiong@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/malcolm-kee/join-string"
+  },
+  "bugs": {
+    "url": "https://github.com/malcolm-kee/join-string/issues"
+  },
   "dependencies": {
     "typesafe-is": "^1.0.1"
   },
