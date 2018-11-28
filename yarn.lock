@@ -3450,11 +3450,6 @@ type-check@~0.3.2:
   dependencies:
     prelude-ls "~1.1.2"
 
-typesafe-is@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/typesafe-is/-/typesafe-is-1.0.1.tgz#eb86c4276eb27d0e9a99f4c7efd509175a3c2ef0"
-  integrity sha512-nDxlJeNidbMHAtZg5iWsEJzvLPfiljWxgoRwb0M6uE7FMHD8/blNLclILO3/n7rF8refTSeZ2Pm1e9edf4Detg==
-
 typescript@^3.1.6:
   version "3.1.6"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.1.6.tgz#b6543a83cfc8c2befb3f4c8fba6896f5b0c9be68"

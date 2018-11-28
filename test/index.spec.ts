@@ -18,7 +18,9 @@ describe('joinString', () => {
 
   test('array will be flatten', () => {
     const joinFn = joinString(', ');
-    expect(joinFn('x', false, undefined, 'y', [false, null, 'z', ''])).toBe('x, y, z');
+    expect(joinFn('x', false, undefined, [false], 'y', [false, null, 'z', ''])).toBe(
+      'x, y, z'
+    );
   });
 });
 
