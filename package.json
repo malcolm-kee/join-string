@@ -24,9 +24,7 @@
   "bugs": {
     "url": "https://github.com/malcolm-kee/join-string/issues"
   },
-  "dependencies": {
-    "typesafe-is": "^1.0.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@types/jest": "^23.3.9",
     "coveralls": "^3.0.2",
